@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+
+.calc {
+    background-color: rgb(187, 176, 163);
+    width: 50%;
+    font-family: 'VT323';
+}
+
+.header {
+    background-color: rgb(49, 47, 47);
+    height: 100%;
+    padding: 1em 2em 2em 2em;
+    border: 0.5en outset #9c9c9c;
+}
+
+h1{
+    margin: 0.25em 0 0.5em 0;
+    color: white;
+}
+
+.header hr {
+    border: 0;
+    border-bottom: 0.25em solid #444;
+    margin-left: -2em;
+    margin-right: -2em;
+    margin-bottom: 0;
+}
+
+.red {
+    border-bottom: 0.25em solid red;
+}
+
+input[type=text]{
+    background-color: rgb(214, 193, 166);
+    color: black;
+    font-size: 300%;
+    min-width: 95%;
+    max-width: 95%;
+    border: 0.1em inset #CBCBCB;
+    text-align: right;
+}
+
+.body {
+    border: 0.5em outset #C6AF91;
+    height: 100%;
+    min-height: 20em;
+    padding: 1em 1em 1em 1em;
+
+}
+.body hr {
+    border-bottom:  0.25em solid #9F3543;
+}
+
+.row {
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=button]{
+    background-color: #444;
+    border: 0.2em outset #444;
+    color: white;
+    font-size: 200%;
+    width: 3.6em;
+    padding: 0;
+    margin: 0;
+}
+
+.row .equals {
+    border: 0.2em outset #666 ;
+    background-color: #666;
+}
+
+.row .clear {
+    border: 0.2em outset #f02626 ;
+    background-color: #f02626;
+}
+
+input[type=button]:active{
+    border: 0 !important;
+}
+
+input[type=button]:focus{
+    outline: 0;
+}
+
+
+@media (max-width: 600px) {
+    .calc {
+        min-width: 300px;
+    }
+
+    input[type=text]{
+        background-color: rgb(214, 193, 166);
+        color: black;
+        font-size: 300%;
+        min-width: 95%;
+        max-width: 95%;
+        border: 0.1em inset #CBCBCB;
+        text-align: right;
+    }
+
+}
